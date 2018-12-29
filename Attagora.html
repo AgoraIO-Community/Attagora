@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    
+    <head>
+        
+        <meta charset = "utf-8" />
+        <title> ATTAGORA </title>
+        
+    </head>
+    
+    <body>
+        
+        <h1> Welcome to Attachments using Agora Signaling </h1>
+        
+        <h3>To start:</h3>
+        <li>Open the JS Console </li>
+        <li>Call: API.login(“Username”)</li>
+        
+        <h3>If you wish to send a file:</h3>
+        <li>Choose a file</li>
+        <li>Call: API.sendAttachment("to")</li>
+        
+        <h3>If you wish to download a file: </h3>
+        <li>Wait for "ATTACHMENT RECEIVED!" message</li>
+        <li>Press "Download File" button</li>
+        
+        <script src = "AgoraSig-1.3.3.js"></script>
+        <script src = "commHandler.js"></script>
+        <script src = "md5.min.js"></script>
+        <script src = "signalToken.js"></script>
+        <script src = "base64Attach.js"></script>
+        
+        <script>
+          
+            var API = new commHandler( );
+        
+        </script>
+        
+        <br/>
+        <input type='file' id='attachment'></input>
+        <div>
+        <button type="button" id="downButton">Download File</button>
+        </div>
+        <br/>
+        
+    </body>
+
+</html>
